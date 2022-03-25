@@ -7,12 +7,13 @@ app.use(express.json());
 app.use(cors());
 
 const conexion = mysql.createConnection({
-    host:'localhost',
-    user: 'root',
-    password:'1234',
-    database: 'articulos',
+    host:'us-cdbr-east-05.cleardb.net',
+    user: 'bbe3d110ea9af8',//'root',
+    password:'00475e5c',  //'1234',
+    database: 'heroku_ed7c4e88fbd21ba',
 })
-
+//  : @ / ?reconnect=true
+//  bbe3d110ea9af8:00475e5c@us-cdbr-east-05.cleardb.net/heroku_ed7c4e88fbd21ba?reconnect=true
 
 conexion.connect(function(error){
     if(error){
