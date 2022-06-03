@@ -59,7 +59,7 @@ app.post('/api/articulos', (req,res)=>{
         if(error){
             throw error;
         }else{
-            res.send(results);  // aqui manda unas vainas raras pero esta bien
+            res.send(results);  
         }
     })
 });
